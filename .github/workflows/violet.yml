@@ -2,6 +2,10 @@ name: violet-main
 on:
    workflow_dispatch:
 
+env:
+  CHATID: ${{ secrets.CHATID }}
+  API_BOT: ${{ secrets.API_BOT }}
+
 jobs:
   hyperbuild:
        runs-on: ubuntu-latest
